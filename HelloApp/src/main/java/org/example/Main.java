@@ -1,10 +1,8 @@
-package org.example;
+public class Main    {
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] arg) {
-
-        System.out.println("Hello World");
+    public static void main(String[] args) {
+        // Get the name from command-line argument
+        String name = args[0];
+        System.out.println("Hello, " + name + "!");
     }
 }
