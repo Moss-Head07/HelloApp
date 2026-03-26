@@ -1,8 +1,14 @@
-public class Main    {
+package org.example;
+
+public class Main {
 
     public static void main(String[] args) {
-        // Get the name from command-line argument
-        String name = args[0];
+        String name = "World";
+
+
+        if (args.length > 0) {
+            name = args[0];
+        }
         System.out.println("Hello, " + name + "!");
     }
 }
