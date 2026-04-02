@@ -10,16 +10,15 @@ public class Main {
 
             StringBuilder nameBuilder = new StringBuilder();
 
+            for (int i = 0; i < args.length; i++) {
+                nameBuilder.append(args[i]);
 
-            for (String arg : args) {
-                nameBuilder.append(arg).append(", ");
+                if (i < args.length - 1) {
+                    nameBuilder.append(", ");
+                }
             }
 
-
-            if (nameBuilder.length() > 0) {
-                name = nameBuilder.substring(0, nameBuilder.length() - 2);
-            }
-
+            name = nameBuilder.toString();
         }
 
         System.out.println("Hello, " + name + "!");
